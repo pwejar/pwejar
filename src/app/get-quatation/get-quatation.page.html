@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="allContent">
+    <div class="backHome" [routerLink]="['/home']" >
+      Home
+    </div>
+    <div class="quotCart">
+      <div class="contacts">
+        <img id="fYOu" src="/assets/pwejar.svg" alt="">
+        <div class="contMe" (click)="clipBoard('Pwejar@gmail.com')">
+          <img src="/assets/gmail.svg" alt="">
+          <p>pwejar@gmail.com</p>
+        </div>
+        <div class="contMe"  (click)="clipBoard(+254792644077)">
+          <img src="/assets/tel.svg" alt="tt">
+          <p>+254-792-644-077</p>
+        </div>
+      </div>
+      <div class="quotationIT">
+        <div class="titleIt">GET QUOTATION</div>
+        <div>
+          <ion-label position="floating">Name<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input Type="text" [(ngModel)]="name"></ion-input>
+        </div>
+        <div>
+          <ion-label position="floating">Company</ion-label>
+          <ion-input Type="text" [(ngModel)]="company"></ion-input>
+        </div>
+        <div>
+          <ion-label position="floating">Email<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input Type="email" [(ngModel)]="email"></ion-input>
+        </div>
+        <div>
+          <ion-label position="floating">Phone</ion-label>
+          <ion-input Type="number" [(ngModel)]="phone"></ion-input>
+        </div>
+        <div>
+          <ion-label position="floating">Details<ion-text color="danger">*</ion-text></ion-label>
+          <ion-textarea  [(ngModel)]="moreD"></ion-textarea>
+        </div>
+        <ion-button style="width: 100%;" (click)="toFirebase()">Submit</ion-button>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

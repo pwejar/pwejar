@@ -11,6 +11,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'get-quatation',
+    loadChildren: () => import('./get-quatation/get-quatation.module').then( m => m.GetQuatationPageModule)
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

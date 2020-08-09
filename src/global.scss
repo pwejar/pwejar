@@ -24,3 +24,61 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: newThing;
+    src: url('/assets/fonts/BreeSerif-Regular.ttf');
+}
+*{
+    font-family: newThing;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.contactsNew{
+    width: 100%;
+    
+    
+}
+.contactsNew1{
+    color: white;
+    font-size: 1.5vh;
+    width: fit-content;
+    
+    
+}
+.contactsNew1 img{
+    width: 2vh;
+    
+   
+}
+.gmail{
+    position: absolute;
+}
+.gmail1{
+    position: relative;
+    float: right;
+    background-color: #0c2180;
+    border-radius: 5px;
+    padding: 0 2vw;
+}
+.gmail, .gmail1{
+   
+    width: fit-content;
+    right: 0;
+    margin-right: 6vw;
+    display: flex;
+}
+.gmail1:hover{
+    cursor: copy;
+    color: gold;
+}
+.gmail img{
+    margin-top: 2vh;
+    height: 2vh;
+}
+.gmail:hover{
+    cursor: copy;
+    color: #0c2180;
+}
